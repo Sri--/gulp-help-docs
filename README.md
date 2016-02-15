@@ -5,11 +5,11 @@ gulp-help-docs is a plugin to document and display descriptions of gulp tasks, t
 
 **gulpfile.js**
 
-```JavaScript
+```js
 var gulp   = require('gulp');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-// Config variable can be empty or come with predefined docs (within package.json or gulpfile)
+// Config variable can be empty or come with predefined docs
 var helpConfig = require('./package.json')['helpDocs'] || {};
 
 help.task('default', 'Default task runs unit tests and jshint', helpConfig);
@@ -38,7 +38,7 @@ gulp.task('help', help.docs.bind(this, gulp.tasks, helpConfig));
 ### Help configuration
 The help configuration object can exist within your gulpfile or package.json. It can be an empty object or one that contains predefined documentation for other tools or purposes. The JSON below is an example.
 
-```JavaScript
+```js
 // Configuration in package.json
 "helpDocs": {
 	"other": [
