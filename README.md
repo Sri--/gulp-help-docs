@@ -8,6 +8,7 @@ gulp-help-docs is a plugin to document and display descriptions of gulp tasks, t
 ```js
 var gulp   = require('gulp');
 var concat = require('gulp-concat');
+var help   = require('gulp-help-docs');
 var uglify = require('gulp-uglify');
 // Config variable can be empty or come with predefined docs
 var helpConfig = require('./package.json')['helpDocs'] || {};
