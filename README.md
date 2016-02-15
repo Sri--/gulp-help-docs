@@ -17,18 +17,18 @@ gulp.task('default', ['js', 'css']);
 
 help.task('css', 'Builds and minifies CSS files', helpConfig);
 gulp.task('css', function(){
-	return gulp.src('./**/*.css')
-		.pipe(concat('index.css'))
-		.pipe(uglify())
-		.pipe(gulp.dest('./dist'));
+    return gulp.src('./**/*.css')
+        .pipe(concat('index.css'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./dist'));
 });
 
 help.task('js', 'Builds and minifies JS files', helpConfig);
 gulp.task('js', function(){
-	return gulp.src('./**/*.js')
-		.pipe(concat('index.js'))
-		.pipe(uglify())
-		.pipe(gulp.dest('./dist'));
+    return gulp.src('./**/*.js')
+        .pipe(concat('index.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./dist'));
 });
 
 help.task('help', 'Displays gulp usage, available tasks and task descriptions', helpConfig);
@@ -38,21 +38,21 @@ gulp.task('help', help.docs.bind(this, gulp.tasks, helpConfig));
 ### Help configuration
 The help configuration object can exist within your gulpfile or package.json. It can be an empty object or one that contains predefined documentation for other tools or purposes. The JSON below is an example.
 
-```js
+```json
 // Configuration in package.json
 "helpDocs": {
-	"other": [
-		{
-			"tool": "BUILDER",
-			"avail": ["deploy", "destroy"],
-			"taskName": "PHASES",
-			"tasks": {
-				"deploy": "Deploys application and assets",
-				"destroy": "Erases application completely"
-			},
-			"usage": "run [PHASE] [OPTIONS...]"
-		}
-	]
+    "other": [
+        {
+            "tool": "BUILDER",
+            "avail": ["deploy", "destroy"],
+            "taskName": "PHASES",
+            "tasks": {
+                "deploy": "Deploys application and assets",
+                "destroy": "Erases application completely"
+            },
+            "usage": "run [PHASE] [OPTIONS...]"
+        }
+    ]
 }
 ```
 
