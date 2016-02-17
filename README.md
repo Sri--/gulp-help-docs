@@ -13,7 +13,7 @@ var uglify = require('gulp-uglify');
 // Config variable can be empty or come with predefined docs
 var helpConfig = require('./package.json')['helpDocs'] || {};
 
-help.task('default', 'Default task runs unit tests and jshint', helpConfig);
+help.task('default', 'Default task builds production assets', helpConfig);
 gulp.task('default', ['js', 'css']);
 
 help.task('css', 'Builds and minifies CSS files', helpConfig);
