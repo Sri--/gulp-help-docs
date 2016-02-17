@@ -21,5 +21,12 @@
     "gulp-docs"
   ],
   "author": "Sri--",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sri--/gulp-help-docs"
+  },
+  "bugs": {
+    "url": "https://github.com/Sri--/gulp-help-docs/issues"
+  }
 }
