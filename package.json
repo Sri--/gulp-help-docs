@@ -1,7 +1,7 @@
 {
   "name": "gulp-help-docs",
-  "version": "1.0.3",
-  "description": "gulp-help-docs is a plugin to document and display descriptions of gulp tasks, their usage within a gulpfile and all available tasks. It also provides the ability to add additional documentation for other tools or processes.",
+  "version": "1.0.4",
+  "description": "Displays descriptions, usage information and available tasks for gulp or other tools",
   "main": "index.js",
   "devDependencies": {
     "gulp": "^3.9.1",
